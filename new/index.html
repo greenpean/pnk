@@ -1,0 +1,39 @@
+
+<link rel="stylesheet" href="pnk.css">
+<link rel="stylesheet" href="//localhost/gila/lib/font-awesome/css/font-awesome.min.css">
+
+<div id="edit-div"></div>
+<div id="tbl" class="container">
+</div>
+
+<script src="//localhost/gila/lib/jquery/jquery-2.2.4.min.js"></script>
+<script src="pnk.js"></script>
+<script>
+PNK.set('tbl','src/core/tables/post',{
+	selectable :true,
+	onclick: function(tr) {
+		$(tr)
+	},
+	commands: ['select','edit','clone'],
+	fields:{
+		'id':{
+			title:'ID',
+			//display: function(r){ return r[0]+'-'+r[4]; }
+		},
+		'publish':{
+			title:' ',
+			display: function(r){ return r[2]==1?'<i class="fa fa-check">':''; }
+		},
+		'user_id':{
+			title:'UserID',
+		},
+		'updated':{
+			title:'Updated',
+		},
+		'title':{
+			title:'Title',
+			
+		},
+	}
+}).update()
+</script>

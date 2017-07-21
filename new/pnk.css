@@ -1,0 +1,51 @@
+
+table {
+	font: 14px Arial;
+	border-collapse: collapse;
+	color: #454545;
+}
+tbody tr:nth-child(odd) {
+	background: #fff
+}
+tbody tr:nth-child(even) {
+	background: #eee
+}
+tbody tr {
+	border-top: 1px solid #ccc;
+	height: 1.4em;
+}
+
+td, th {
+	padding: 12px 4px;
+	overflow: hidden;
+}
+td, th {
+	/*padding: 12px 4px;*/
+	overflow: hidden;
+}
+td, th {
+	/*padding: 4px 4px;
+	overflow: hidden;*/
+}
+
+.selected {
+	background: olive!important;
+	color: white!important;
+}
+th {
+    resize: horizontal;
+	width:0;
+    overflow: hidden;
+}
+/*
+th::after {
+    content: " ";
+    cursor: col-resize;
+    font-size: 14px;
+    float:right;
+    height: 22px;
+    width: 22px;
+    text-align: center;
+    z-index: 2;
+    background-color: white;
+}*/
